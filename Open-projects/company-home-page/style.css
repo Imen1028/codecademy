@@ -1,0 +1,287 @@
+/* Global Settings */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+}
+
+html,
+body {
+    background: rgb(247, 247, 247);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.75rem;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:visited {
+    color: black;
+}
+
+/* Navigation */
+
+.nav {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+    border-bottom: rgb(48, 48, 48) 1px solid;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* you can change the size of an icon using the font size rather than setting the height and width of an icon. */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+}
+
+.icon:visited {
+    color: black;
+}
+
+.icon:hover {
+    color: cornflowerblue;
+}
+
+ion-icon:active {
+    transform: scale(0.8);
+    transition: 0.25s ease-in-out;
+}
+
+.navlist-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlist {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.navlist-container:last-child {
+    margin-right: 2rem;
+}
+
+.navlist a {
+    text-decoration: none;
+}
+
+.navlist a:visited {
+    color: black;
+}
+
+.navlist a:hover {
+    color: cornflowerblue;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    top: 4.5rem;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/vidar-nordli-mathisen-y8TMoCzw87E-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header h1 {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.btn {
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    padding: 10px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.75px;
+}
+
+.btn:hover {
+    letter-spacing: 4px;
+    transition: 0.25s ease-in-out;
+}
+
+@media only screen and (max-width: 760px) {
+    h1 {
+        font-size: 3rem;
+    }    
+    .btn {
+        font-size: 1rem;
+    }
+}
+
+main {
+    position: relative;
+    top: 4.5rem;
+    text-align: center;
+}
+
+main h1 {
+    margin-top: 2rem;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-shrink: 1;
+}
+
+.company-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin-top: 1.5rem;
+    border: 1px solid #000;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+
+.company-description:hover {
+    box-shadow: rgb(105, 105, 105) 2px 3px 5px;
+    transition: 0.20s ease-in-out;
+}
+
+.image-contianer {
+    width: 325px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Shrink image */
+.image-contianer img:hover {
+    transform: scale(0.85);
+    transition: 0.4s ease-in-out;
+}
+
+.company-description p {
+    padding-bottom: 30px;
+}
+
+.product-section {
+    margin: 2rem 0;
+}
+
+.our-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.product-container {
+    margin: 1.5rem 1rem 1rem;
+}
+
+.our-products img {
+    width: 325px;
+    height: 20rem;
+}
+
+.product-container .image-contianer {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 460px) {
+    .image-contianer {
+        width: 300px;
+        height: 295px;
+    }
+    .image-contianer img{
+        width: 250px;
+        height: 245px;
+    }
+    .our-products img {
+        width: 250px;
+        height: 245px;
+    }
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    top: 4.5rem;
+    width: 100%;
+    height: 4.5rem;
+    background: rgb(214, 214, 214);
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.footer-container .icon:hover {
+    color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 460px) {
+    footer {
+        height: auto;
+        justify-content: center;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-container a {
+        margin-left: 0;
+        padding-top: 1rem;
+    }
+    .footer-container:last-child {
+        padding-bottom: 1rem;
+    }
+}

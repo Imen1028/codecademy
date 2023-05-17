@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Vollkorn:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-family: 'Vollkorn', serif;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Vollkorn', serif;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Vollkorn', serif;
+    font-size: 1.5rem;
+}
+
+/* Nav */
+
+nav {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #e4546c;
+    position: fixed;
+}
+
+nav h2 {
+line-height: 80%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:visited {
+    color: #000;
+}
+
+@media only screen and (max-width: 760px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 10px;
+    }
+}
+
+/* Header */
+
+header {
+    background-image: url(img/book-club.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+}
+
+.header-container {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.header-container h1 span {
+    font-family: 'Vollkorn', serif;
+}
+
+.header-container h1 span:hover {
+    color: #E35F75;
+    transition: .5s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover {
+    letter-spacing: 3px;
+    transition: .25s ease-in-out;
+}
+
+@media only screen and (max-width: 760px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 2rem;
+    }
+    button {
+        font-size: 12px;
+    }
+}
+
+/* main */
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: #E35F75;
+}
+
+main h1 {
+    margin-top: 2rem;
+}
+
+.event-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    margin: 1rem 3rem 0;
+    gap: 1rem;
+    align-content: center;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+    flex-direction: column;
+    background: rgb(234, 234, 234);
+    padding: 1rem;
+}
+
+.event-container img {
+    width: 20rem;
+    /* height: 14rem; */
+    margin: 5px 0 10px;
+}
+
+.story-section {
+    width: 100%;
+}
+
+.story-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 1em 3em 2em;
+}
+
+.story-img {
+    padding: 0 2em;
+    flex: 2 1;
+    width: 25em;
+}
+
+.story-description {
+    margin: 10px 1em;
+    flex: 1 1;
+    min-width: 200px;
+}
+
+@media only screen and (max-width: 900px) {
+    .story-description {
+        min-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .story-img {
+        width: 24.5em;
+    }
+    html {
+        font-size: 13px;
+    }
+    .story-description {
+        min-width: none;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .story-container {
+        font-size: 12px;
+    }
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+}
